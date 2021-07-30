@@ -4,6 +4,9 @@ This repository contains the files used either in the process of searching polli
 
 There are four key files in this repository:
 
-1. 
+1. 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), editing following my initial check of abstracts.
+2. clade_extrapolation_2.csv
+3. clade_extrapolation_non_text-analysis.csv
+4. non_family-genus_species-list.csv
 
 Supplementary Data 2 of the Nat Comms paper contains a list of references used in 
