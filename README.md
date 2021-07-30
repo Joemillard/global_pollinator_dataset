@@ -4,9 +4,12 @@ This repository contains the files used either in the process of searching polli
 
 There are four key files in this repository:
 
-1. 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), editing following my initial check of abstracts.
-2. clade_extrapolation_2.csv
-3. clade_extrapolation_non_text-analysis.csv
-4. non_family-genus_species-list.csv
+* 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), editing following my initial check of abstracts.
+    *
+      
+* 'confirmed_pollinating_families_04_edit' is the list of unique families with some evidence of pollination from the above direct evidence check, edited following my check of each family.
+* 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis
+* 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis
+* 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead).
 
 Supplementary Data 2 of the Nat Comms paper contains a list of references used in 
