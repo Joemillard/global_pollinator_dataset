@@ -17,9 +17,26 @@ There are five key files in this repository:
 		-- 'Pollinating evidence/reference' is a binomial variable created on my initial pass through the abstracts for each genus, in which I assigned a Yes/No to indicate whether that genus is a likely pollinator<br>
 		-- 'Pollinating confidence' refers to the direct level of confidence assigned for each 'Y' above (see Nat Comms paper)<br>
 
-* 'confirmed_pollinating_families_04_edit' is the list of unique families with some evidence of pollination from the above direct evidence check, edited following my check of each family.
-* 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis
-* 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis
-* 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead).
+* 'confirmed_pollinating_families_04_edit' is the list of unique families with some evidence of pollination from the above direct evidence check, edited following my check of each family. Each of the columns are described below: <br>
+		-- 'class' refers to the taxonomic class of each unique family with some direct evidence of pollination
+		-- 'order' refers to the taxonomic order of each unique family with some direct evidence of pollination	 
+		-- 'family' refers to the taxonomic family of each unique family with some direct evidence of pollination	
+		-- 'species' refers to the number of species in total that family	
+		-- 'scraped' refers to the number of unique species of that family found in the initial taxonomic scrape	
+		-- 'prop' refers to the proportion of species in that family with evidence (i.e. 'scraped'/'species')
+		-- 'family_checked' indicates that JM has check that family
+		-- 'extrapolated' indicates whether that family (or a tribe/subfamily within that family) was extrapolated as pollinating
+
+* 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Each of the columns are described below: <br>
+		-- 'class'	
+		-- 'order'	
+		-- 'family'	
+		-- 'clade'	
+		-- 'clade_rank'	
+		-- 'confidence'
+		-- 'additional_citations'
+
+* 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Each of the columns are described below: <br>
+* 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
 
 Supplementary Data 2 of the Nat Comms paper contains a list of references used in 
