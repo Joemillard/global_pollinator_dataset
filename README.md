@@ -1,6 +1,6 @@
 # Pollinator datasets and metadata descriptions
 
-This repository contains the files used either in the process of searching pollinators, or the list of pollinators themselves. This repository does not contain the scripts used to merge the pollinators here with the PREDICTS database (for that script please see here https://github.com/Joemillard/Global_effects_of_land-use_intensity_on_local_pollinator-biodiversity/blob/main/R/01_PREDICTS_compilation.R), or data for the pollinator expert check (note that this was carried out on the PREDICTS subset alone). For the set of taxa that were either removed or added following the expert check please see Supplementary Data 1 in the Nat Comms paper, or in lines 167-190 of the above script. 
+This repository contains the files used either in the process of searching pollinators, or the list of pollinators themselves. This repository does not contain the scripts used to merge the pollinators here with the PREDICTS database (for that script please see here https://github.com/Joemillard/Global_effects_of_land-use_intensity_on_local_pollinator-biodiversity/blob/main/R/01_PREDICTS_compilation.R), or data for the pollinator expert check (note that this was carried out on the PREDICTS subset alone). For the set of taxa that were either removed or added following the expert check please see Supplementary Data 1 in the Nat Comms paper, or in lines 167-190 of the above script. The Nat Comms paper also contains a set of references used in my extrapolation process of pollination.
 
 There are five key files in this repository:
 
@@ -27,7 +27,7 @@ There are five key files in this repository:
 		-- 'family_checked' indicates that JM has check that family<br>
 		-- 'extrapolated' indicates whether that family (or a tribe/subfamily within that family) was extrapolated as pollinating<br>
 
-* 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Each of the columns are described below: <br>
+* 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Any taxa here assigned a value of direct confidence is one for which I found direct evidence at the genus level whilst searching for evidence to extrapolate. Each of the columns are described below: <br>
 		-- 'class' refers to the taxonomic class of each extrapolated group<br>	
 		-- 'order' refers to the taxonomic order of each extrapolated group<br>		
 		-- 'family' refers to the taxonomic family of each extrapolated group<br>		
@@ -36,7 +36,13 @@ There are five key files in this repository:
 		-- 'confidence' refers to the confidence at which that group was extrapolated (see Nat Comms paper for more details)<br>
 		-- 'additional_citations' refers to any additional references used in making the decision to extrapolate<br>
 
-* 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Each of the columns are described below: <br>
-* 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
+* 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Columns here take the same format as above.
 
-Supplementary Data 2 of the Nat Comms paper contains a list of references used in 
+* 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
+		-- class refers to the taxonomic class of that extrapolated non family group
+		-- order refers to the taxonomic order	of that extrapolated non family group
+		-- family refers to the taxonomic family of that extrapolated non family group	
+		-- clade refers to the extrapolated non-family group 	
+		-- clade_rank refers to the level at which that group was extrapolated	
+		-- genus refers to the names of the genera within those non-family groups, used to match against PREDICTS	
+		-- confidence refers to the confidence at which that non-family group was extrapolated.
