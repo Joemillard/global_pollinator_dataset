@@ -28,13 +28,13 @@ There are five key files in this repository:
 		-- 'extrapolated' indicates whether that family (or a tribe/subfamily within that family) was extrapolated as pollinating<br>
 
 * 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Each of the columns are described below: <br>
-		-- 'class'	
-		-- 'order'	
-		-- 'family'	
-		-- 'clade'	
-		-- 'clade_rank'	
-		-- 'confidence'
-		-- 'additional_citations'
+		-- 'class' refers to the taxonomic class of each extrapolated group<br>	
+		-- 'order' refers to the taxonomic order of each extrapolated group<br>		
+		-- 'family' refers to the taxonomic family of each extrapolated group<br>		
+		-- 'clade' refers to the taxonoic group extrapolated<br>	
+		-- 'clade_rank'	refers to the taxonomic level of the extrapolated group<br>
+		-- 'confidence' refers to the confidence at which that group was extrapolated (see Nat Comms paper for more details)<br>
+		-- 'additional_citations' refers to any additional references used in making the decision to extrapolate<br>
 
 * 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Each of the columns are described below: <br>
 * 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
