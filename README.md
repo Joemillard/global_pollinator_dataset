@@ -39,10 +39,10 @@ There are five key files in this repository:
 * 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Columns here take the same format as above.
 
 * 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
-		-- class refers to the taxonomic class of that extrapolated non family group
-		-- order refers to the taxonomic order	of that extrapolated non family group
-		-- family refers to the taxonomic family of that extrapolated non family group	
-		-- clade refers to the extrapolated non-family group 	
-		-- clade_rank refers to the level at which that group was extrapolated	
-		-- genus refers to the names of the genera within those non-family groups, used to match against PREDICTS	
-		-- confidence refers to the confidence at which that non-family group was extrapolated.
+		-- class refers to the taxonomic class of that extrapolated non family group<br>
+		-- order refers to the taxonomic order	of that extrapolated non family group<br>
+		-- family refers to the taxonomic family of that extrapolated non family group<br>	
+		-- clade refers to the extrapolated non-family group<br> 	
+		-- clade_rank refers to the level at which that group was extrapolated<br>	
+		-- genus refers to the names of the genera within those non-family groups, used to match against PREDICTS<br>	
+		-- confidence refers to the confidence at which that non-family group was extrapolated.<br>
