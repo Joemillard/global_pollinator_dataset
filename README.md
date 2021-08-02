@@ -6,7 +6,7 @@ There are five key files in this repository:
 
 * 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), editing following my initial check of abstracts. Each of the columns are described below: <br>
 		-- 'aggregated.scientific_name.i.' refers to each of the unique genera found in the initial scrape <br>
-		-- 'unique_class' refers to the taxonomic class of each genus <br>
+		-- 'unique_class' refers to the taxonomic class of each genus<br>
 		-- 'unique_order' refers to the taxonomic order of each genus<br>
 		-- 'unique_family' refers to the taxonomic family of each genus<br>
 		-- 'unique_loc' refers to the set of unique Scopus IDs in which each genus was found<br>
@@ -18,14 +18,14 @@ There are five key files in this repository:
 		-- 'Pollinating confidence' refers to the direct level of confidence assigned for each 'Y' above (see Nat Comms paper)<br>
 
 * 'confirmed_pollinating_families_04_edit' is the list of unique families with some evidence of pollination from the above direct evidence check, edited following my check of each family. Each of the columns are described below: <br>
-		-- 'class' refers to the taxonomic class of each unique family with some direct evidence of pollination
-		-- 'order' refers to the taxonomic order of each unique family with some direct evidence of pollination	 
-		-- 'family' refers to the taxonomic family of each unique family with some direct evidence of pollination	
-		-- 'species' refers to the number of species in total that family	
-		-- 'scraped' refers to the number of unique species of that family found in the initial taxonomic scrape	
-		-- 'prop' refers to the proportion of species in that family with evidence (i.e. 'scraped'/'species')
-		-- 'family_checked' indicates that JM has check that family
-		-- 'extrapolated' indicates whether that family (or a tribe/subfamily within that family) was extrapolated as pollinating
+		-- 'class' refers to the taxonomic class of each unique family with some direct evidence of pollination<br>
+		-- 'order' refers to the taxonomic order of each unique family with some direct evidence of pollination<br> 
+		-- 'family' refers to the taxonomic family of each unique family with some direct evidence of pollination<br>	
+		-- 'species' refers to the number of species in total that family<br>	
+		-- 'scraped' refers to the number of unique species of that family found in the initial taxonomic scrape<br>	
+		-- 'prop' refers to the proportion of species in that family with evidence (i.e. 'scraped'/'species')<br>
+		-- 'family_checked' indicates that JM has check that family<br>
+		-- 'extrapolated' indicates whether that family (or a tribe/subfamily within that family) was extrapolated as pollinating<br>
 
 * 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Each of the columns are described below: <br>
 		-- 'class'	
