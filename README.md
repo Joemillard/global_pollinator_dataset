@@ -6,7 +6,7 @@ This repository does not contain the scripts used to merge the pollinators here 
 
 There are six key files in this repository:
 
-* 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), editing following my initial check of abstracts. Each of the columns are described below: <br>
+* 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), edited following my initial check of abstracts. Each of the columns are described below: <br>
 		-- 'aggregated.scientific_name.i.' refers to each of the unique genera found in the initial scrape <br>
 		-- 'unique_class' refers to the taxonomic class of each genus<br>
 		-- 'unique_order' refers to the taxonomic order of each genus<br>
