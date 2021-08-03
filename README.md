@@ -56,7 +56,7 @@ There are six key files in this repository:
 		-- 'Family' refers to the taxonomic family of that likely pollinating species<br>
 		-- 'genus' refers to the taxonomic genus of that likely pollinating species<br>
 		-- 'clade_rank' refers to the taxonomic rank of extrapolation for that likely pollinating species (if extrapolated, blank if not)<br>
-		-- 'confidence' refers to the confidence of pollination for that likely pollinating species(1-4 direct, 5.1-5.4 extrapolated)<br>
+		-- 'confidence' refers to the confidence of pollination for that likely pollinating species (1-4 direct, 5.1-5.4 extrapolated)<br>
  		-- 'subfamily/tribe' refers to taxonomic subfamily/tribe of that likely pollinating species (if extrapolated at that level, blank if not)<br>
  		-- 'gen_prop' refers to an additional level of confidence (the number of scraped genera for that extrapolated group divided by the total genera for that group in the COL i.e. for what proportion of that group is there direct evidence)<br>
  		-- 'DOI_prop' refers to an additional level of confidence (the number of papers found for that extrapolated group divided by the total number of papers)<br> 
