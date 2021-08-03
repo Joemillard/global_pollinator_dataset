@@ -52,13 +52,13 @@ There are five key files in this repository:
 * 'COL_compiled_pollinators.rds' is the list of likely pollinating species returned after merging the above files with the 2017 version of the Catalogue of Life. Each of the columns are described below:<br> 
 		-- 'scientific_name' refers to the species name of the likely pollinator<br>
 		-- 'Class' refers to the taxonomic class of that likely pollinating species<br>
-		-- 'Order' refers to the taxonomic order of that likely pollinating species <br>  
-		-- 'Family' refers to the taxonomic family of that likely pollinating species<br>   
-		-- 'genus' refers to the taxonomic genus of that likely pollinating species <br> 
-		-- 'clade_rank' refers to the taxonomic rank of extrapolation for that likely pollinating species (if extrapolated, blank if not)<br> 
+		-- 'Order' refers to the taxonomic order of that likely pollinating species <br>
+		-- 'Family' refers to the taxonomic family of that likely pollinating species<br>
+		-- 'genus' refers to the taxonomic genus of that likely pollinating species<br>
+		-- 'clade_rank' refers to the taxonomic rank of extrapolation for that likely pollinating species (if extrapolated, blank if not)<br>
 		-- 'confidence' refers to the confidence of pollination for that likely pollinating species(1-4 direct, 5.1-5.4 extrapolated)<br>
  		-- 'subfamily/tribe' refers to taxonomic subfamily/tribe of that likely pollinating species (if extrapolated at that level, blank if not)<br>
- 		-- 'gen_prop' refers to an additional level of confidence (the number of scraped genera for that extrapolated group divided by the total genera for that group in the COL i.e. for what proportion of that group is there direct evidence)<br>     
+ 		-- 'gen_prop' refers to an additional level of confidence (the number of scraped genera for that extrapolated group divided by the total genera for that group in the COL i.e. for what proportion of that group is there direct evidence)<br>
  		-- 'DOI_prop' refers to an additional level of confidence (the number of papers found for that extrapolated group divided by the total number of papers)<br> 
  		-- 'add_conf' is a function of both 'gen_prop' and 'DOI_prop'  (gen_prop * DOI_prop)<br>
  		-- 'fact_conf' refers to add_conf converted to a percentile of four levels, 'a' being highest confidence d = "0-25", c = "25-50", b = "50-75", a = "75-100<br>
