@@ -6,7 +6,7 @@ This repository does not contain the scripts used to merge the pollinators here 
 
 There are six key files in this repository:
 
-* 'global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), edited following my initial check of abstracts. Each of the columns are described below: <br>
+* '01_global_polllinating_confirmation_manual-edit.csv' is the original direct evidence csv aggregated from the output of the Ecography paper (i.e. any animal genus found in a pollination related abstract), edited following my initial check of abstracts. Each of the columns are described below: <br>
 		-- 'aggregated.scientific_name.i.' refers to each of the unique genera found in the initial scrape <br>
 		-- 'unique_class' refers to the taxonomic class of each genus<br>
 		-- 'unique_order' refers to the taxonomic order of each genus<br>
@@ -19,7 +19,7 @@ There are six key files in this repository:
 		-- 'Pollinating evidence/reference' is a binomial variable created on my initial pass through the abstracts for each genus, in which I assigned a Yes/No to indicate whether that genus is a likely pollinator<br>
 		-- 'Pollinating confidence' refers to the direct level of confidence assigned for each 'Y' above (see Nat Comms paper)<br>
 
-* 'confirmed_pollinating_families_04_edit' is the list of unique families with some evidence of pollination from the above direct evidence check, edited following my check of each family. Each of the columns are described below: <br>
+* '02_confirmed_pollinating_families_04_edit' is the list of unique families with some evidence of pollination from the above direct evidence check, edited following my check of each family. Each of the columns are described below: <br>
 		-- 'class' refers to the taxonomic class of each unique family with some direct evidence of pollination<br>
 		-- 'order' refers to the taxonomic order of each unique family with some direct evidence of pollination<br> 
 		-- 'family' refers to the taxonomic family of each unique family with some direct evidence of pollination<br>	
@@ -29,7 +29,7 @@ There are six key files in this repository:
 		-- 'family_checked' indicates that JM has check that family<br>
 		-- 'extrapolated' indicates whether that family (or a tribe/subfamily within that family) was extrapolated as pollinating<br>
 
-* 'clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Any taxa here assigned a value of direct confidence is one for which I found direct evidence at the genus level whilst searching for evidence to extrapolate. Each of the columns are described below: <br>
+* '03_clade_extrapolation_2.csv' is the set of taxa extrapolated as pollinators, prioritised through the initial text-analysis. Any taxa here assigned a value of direct confidence is one for which I found direct evidence at the genus level whilst searching for evidence to extrapolate. Each of the columns are described below: <br>
 		-- 'class' refers to the taxonomic class of each extrapolated group<br>	
 		-- 'order' refers to the taxonomic order of each extrapolated group<br>		
 		-- 'family' refers to the taxonomic family of each extrapolated group<br>		
@@ -38,9 +38,9 @@ There are six key files in this repository:
 		-- 'confidence' refers to the confidence at which that group was extrapolated (see Nat Comms paper for more details)<br>
 		-- 'additional_citations' refers to any additional references used in making the decision to extrapolate<br>
 
-* 'clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Columns here take the same format as above.
+* '04_clade_extrapolation_non_text-analysis.csv' is the set of taxa extrapolated on the basis of Wardhaugh (2015), that didn't appear in the text analysis. Columns here take the same format as above.
 
-* 'non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
+* '05_non_family-genus_species-list.csv' is the set of taxonomic names for groups that were not extrapolated at the family level (i.e. they cannot be easily merged with the PREDICTS database, so instead I searched for all the generic names and merged these instead). Each of the columns are described below: <br>
 		-- 'class' refers to the taxonomic class of that extrapolated non family group<br>
 		-- 'order' refers to the taxonomic order of that extrapolated non family group<br>
 		-- 'family' refers to the taxonomic family of that extrapolated non family group<br>	
@@ -49,7 +49,7 @@ There are six key files in this repository:
 		-- 'genus' refers to the names of the genera within those non-family groups, used to match against PREDICTS<br>	
 		-- 'confidence' refers to the confidence at which that non-family group was extrapolated.<br>
 
-* 'COL_compiled_pollinators.rds' is the list of likely pollinating species returned after merging the above files with the 2017 version of the Catalogue of Life. Each of the columns are described below:<br> 
+* '06_COL_compiled_pollinators.rds' is the list of likely pollinating species returned after merging the above files with the 2017 version of the Catalogue of Life. Each of the columns are described below:<br> 
 		-- 'scientific_name' refers to the species name of the likely pollinator<br>
 		-- 'Class' refers to the taxonomic class of that likely pollinating species<br>
 		-- 'Order' refers to the taxonomic order of that likely pollinating species <br>
