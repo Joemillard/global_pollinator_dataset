@@ -1,4 +1,4 @@
-# Pollinator datasets and metadata descriptions
+# A global dataset of likely animal pollinators
 
 This repository contains the files used in the process of searching pollinators, the groups of pollinators themselves, and a list of likely pollinating species names. Note that these datasets should not be treated as an exclusive list of all pollinators at species level. Instead these data should be merged with taxonomic lists (here either PREDICTS or the Catalogue of Life) to generate species lists of pollinators.
 
