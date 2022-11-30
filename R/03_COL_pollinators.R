@@ -6,12 +6,12 @@ library(forcats)
 ### read in the pollinator data and COL
 
 # read in direct confidence dataframe and filter for Y
-direct_confidence <- read.csv("~/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/global_polllinating_confirmation_manual-edit.csv", stringsAsFactors = FALSE)
+direct_confidence <- read.csv("data/inputs/01_global_polllinating_confirmation_manual-edit.csv", stringsAsFactors = FALSE)
 direct_confidence <- direct_confidence %>%
   filter(Pollinating.evidence.reference == "Y")
 
 # read in clade extrapolation dataframe, filter out subfamily and tribe 
-clade_extrapolation <- read.csv("~/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/clade_extrapolation.csv", stringsAsFactors = FALSE)
+clade_extrapolation <- read.csv("data/inputs/03_clade_extrapolation.csv", stringsAsFactors = FALSE)
 
 # seperate out genera into different dataframe
 clade_extrapolation_genera <- clade_extrapolation %>%
@@ -24,7 +24,7 @@ clade_extrapolation <- clade_extrapolation %>%
   filter(clade_rank != "genus")
 
 # read in clade extrapolation non text-analysis
-extrap_non_text_analysis <- read.csv("~/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/clade_extrapolation_non_text-analysis.csv", stringsAsFactors = FALSE)
+extrap_non_text_analysis <- read.csv("data/inputs/04_clade_extrapolation_non_text-analysis.csv", stringsAsFactors = FALSE)
 
 # seperate genera from extrapolation
 extrap_non_text_analysis_genera <- extrap_non_text_analysis %>%
@@ -35,10 +35,12 @@ extrap_non_text_analysis <- extrap_non_text_analysis %>%
   filter(clade_rank == "family")
 
 # read in non-family/tribe genus list
-non_family_genus_list <- read.csv("~/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/non_family-genus_species-list.csv", stringsAsFactors = FALSE)
+non_family_genus_list <- read.csv("data/inputs/05_non_family-genus_species-list.csv", stringsAsFactors = FALSE)
 
 # read in COL animal data - NEED TO READ IN DATAFRAME AFTER CORRECTING FOR WHOLE COL (12/11/2019)
 unique_col <- readRDS("~/PhD/Aims/Aim 1 - collate pollinator knowledge/Data/Taxonomic data/2017-annual/cleaned/unique_COL_species_03.rds")
+
+"data/inputs/2017_catalogue_of_life_cleaned.rds"
 
 # subset for unique species
 COL_taxa <- unique_col %>%
@@ -276,10 +278,4 @@ COL_fin_bound_conf <- inner_join(extrap, spec_paper, by = c("Family" = "unique_f
 fin_conf <- rbind(COL_fin_bound_conf, direct)
 
 # write the final file to csv
-write.csv(fin_conf, "COL_compiled_pollinators_add_conf_2.csv")
-
-fin_conf %>%
-  select(Family, `subfamily/tribe`, add_conf, fact_conf, confidence, comb_conf, prop) %>%
-  unique() %>%
-  arrange(confidence, desc(prop)) %>%
-  View()
+saveRDS(fin_conf, "06_COL_compiled_pollinators.rds")
