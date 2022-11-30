@@ -6,7 +6,7 @@ This repository contains a set of input files for generating a set of likely ani
 
 Note also that the PREDICTS code included here removes a set of species that were deemed by experts unlikely to represent pollinators. The Catalogue of Life subset has not been checked in this manner meaning it should be treated with caution.
 
-It's also important to note that the input files should not be treated as a list of pollinators at species level. These input files are intended for merging with taxonomic lists to generate species lists of pollinators:
+It's also important to note that the input files should not be treated as a list of pollinators at species level. These input files are intended for merging with taxonomic lists to generate species lists of pollinators
 
 ------------
 
