@@ -6,11 +6,13 @@ This repository contains a set of input files for generating a set of likely ani
 
 Note also that the PREDICTS code included here removes a set of species that were deemed by experts unlikely to represent pollinators. The Catalogue of Life subset has not been checked in this manner meaning it should be treated with caution.
 
-It's also important to note that the input files should not be treated as a list of pollinators at species level. These input files are intended for merging with taxonomic lists to generate species lists of pollinators
+It's also important to note that the input files should not be treated as a list of pollinators at species level. These input files are intended for merging with taxonomic lists to generate species lists of pollinators.
 
 ------------
 
 ### Structure
+
+This repo is written relative to the .Rproj file at the root of the project directory. Any code is hosted in the /R directory, any input data in the /data/inputs directory, and all output data in the /data/outputs directory:
 
 - To generate the set of likely pollinators in the PREDICTS database (i.e. data/outputs/07_PREDICTS_pollinators_exp.rds) run R/01_PREDICTS_pollinators.R. For the set of taxa that were either removed or added following the expert check please see lines 168-214 (also see Supplementary Data 1 in Millard et al. 2021 for the set of taxa removed, and for the set of references used in my extrapolation of likely animal pollination).
 
