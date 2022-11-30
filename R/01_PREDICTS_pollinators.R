@@ -5,12 +5,12 @@ library(here)
 ### read in the pollinator data and PREDICTS
 
 # read in direct confidence dataframe and filter for Y
-direct_confidence <- read.csv("C:/Users/joeym/Documents/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/global_polllinating_confirmation_manual-edit.csv", stringsAsFactors = FALSE)
+direct_confidence <- read.csv("data/inputs/01_global_polllinating_confirmation_manual-edit.csv", stringsAsFactors = FALSE)
 direct_confidence <- direct_confidence %>%
   filter(Pollinating.evidence.reference == "Y")
 
 # read in clade extrapolation dataframe, filter out subfamily and tribe, and seperate out genera into different dataframe
-clade_extrapolation <- read.csv("C:/Users/joeym/Documents/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/clade_extrapolation_2.csv", stringsAsFactors = FALSE)
+clade_extrapolation <- read.csv("data/inputs/03_clade_extrapolation.csv", stringsAsFactors = FALSE)
 
 # seperate genera from extrapolation
 clade_extrapolation_genera <- clade_extrapolation %>%
@@ -23,7 +23,7 @@ clade_extrapolation <- clade_extrapolation %>%
   filter(clade_rank != "genus")
 
 # read in clade extrapolation non text-analysis
-extrap_non_text_analysis <- read.csv("C:/Users/joeym/Documents/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/clade_extrapolation_non_text-analysis.csv", stringsAsFactors = FALSE)
+extrap_non_text_analysis <- read.csv("data/inputs/04_clade_extrapolation_non_text-analysis.csv", stringsAsFactors = FALSE)
 
 # seperate genera from extrapolation
 extrap_non_text_analysis_genera <- extrap_non_text_analysis %>%
@@ -34,10 +34,10 @@ extrap_non_text_analysis <- extrap_non_text_analysis %>%
   filter(clade_rank == "family")
 
 # read in non-family/tribe genus list
-non_family_genus_list <- read.csv("C:/Users/joeym/Documents/PhD/Aims/Aim 2 - understand response to environmental change/Data/global clade extrapolation/non_family-genus_species-list.csv", stringsAsFactors = FALSE)
+non_family_genus_list <- read.csv("data/inputs/05_non_family-genus_species-list.csv", stringsAsFactors = FALSE)
 
 # read in the PREDICTS data, and create extra copy just with taxonomic data for size
-PREDICTS <- readRDS("C:/Users/joeym/Documents/PhD/Aims/Aim 2 - understand response to environmental change/Data/PREDICTS/database.rds")
+PREDICTS <- readRDS("data/inputs/PREDICTS_database.rds")
 PREDICTS_taxa <- PREDICTS %>%
   select(Kingdom, Phylum, Class, Order, Family, Genus) %>%
   filter(Kingdom == "Animalia") %>%
@@ -193,9 +193,6 @@ pollinator_save$status[pollinator_save$Genus %in% c(
 # genera kept in
 pollinator_save$status[is.na(pollinator_save$status)] <- "KEPT"
 
-# save the csv for final set of pollinators as to whether added, removed etc
-write.csv(pollinator_save, "pollinating_PREDICTS_genera.csv")
-
 # remove any taxa that ecologists have suggested we remove
 PRED_fin_bound_ex_2 <- PRED_fin_bound_ex %>%
   filter(!Family %in% c("Formicidae", 
@@ -223,4 +220,4 @@ PREDICTS_pollinators <- inner_join(PREDICTS, PRED_fin_bound_ex_2, by = c("Kingdo
 PREDICTS_pollinators <- droplevels(PREDICTS_pollinators)
 
 # save predicts pollinators as RDS
-saveRDS(PREDICTS_pollinators, "outputs/PREDICTS_pollinators_8_exp.rds")
+saveRDS(PREDICTS_pollinators, "data/outputs/PREDICTS_pollinators_exp.rds")
