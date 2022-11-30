@@ -8,6 +8,10 @@ Note also that the PREDICTS code included here removes a set of species that wer
 
 It's also important to note that the input files should not be treated as a list of pollinators at species level. These input files are intended for merging with taxonomic lists to generate species lists of pollinators:
 
+------------
+
+### Structure
+
 - To generate the set of likely pollinators in the PREDICTS database (i.e. data/outputs/07_PREDICTS_pollinators_exp.rds) run R/01_PREDICTS_pollinators.R. For the set of taxa that were either removed or added following the expert check please see lines 168-214 (also see Supplementary Data 1 in Millard et al. 2021 for the set of taxa removed, and for the set of references used in my extrapolation of likely animal pollination).
 
 - To generate the set of likely pollinating species in the Catalogue of Life (i.e. data/outputs/06_COL_compiled_pollinators.rds) run R/03_COL_pollinators.R. For this script you will need to have downloaded a copy of the COL from here https://www.catalogueoflife.org/data/download. Note that the 2017 COL will first require cleaning up with a script such as R/02_clean_COL.R. When merging with the COL it's important to be wary of duplicating species names. 
@@ -22,14 +26,17 @@ Millard, J., Outhwaite, C.L. , Kinnersley, R., Freeman, R., Gregory, R.D., Adedo
 
 ------------
 
+### Acknowledgements
+
+J.M. was funded by the London NERC DTP—award number NE/R012148/1—and the RSPB on a CASE studentship. This work was supported by a grant from the UK Natural Environment Research Council (grant ref. NE/R010811/1) and by a Royal Society University Research Fellowship awarded to T.N.
+
+
+------------
+
 ### License
 
 This code is licensed under an MIT license, granting any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The copyright notice and this permission notice (see 'LICENSE') are included in all copies or substantial portions of the Software. 
 
-------------
 
-### Acknowledgements
-
-J.M. was funded by the London NERC DTP—award number NE/R012148/1—and the RSPB on a CASE studentship. This work was supported by a grant from the UK Natural Environment Research Council (grant ref. NE/R010811/1) and by a Royal Society University Research Fellowship awarded to T.N.
