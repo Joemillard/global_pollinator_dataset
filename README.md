@@ -8,7 +8,7 @@ It's also important to note that the input files should not be treated as a list
 
 - To generate the set of likely pollinators in the PREDICTS database run R/01_PREDICTS_pollinators.R. For the set of taxa that were either removed or added following the expert check please see lines 168-214 (also see Supplementary Data 1 in Millard et al. 2021 for the set of taxa removed, and for the set of references used in my extrapolation of likely animal pollination).
 
-- To generate the set of likely pollinating species in the Catalogue of Life (COL) run R/03_COL_pollinators.R. For this script you will need to have downloaded a copy of the COL from here https://www.catalogueoflife.org/data/download. Note that the 2017 COL will first require cleaning up with a script such as 02_clean_COL.R. When merging with the COL it's important to be wary of duplicating species names. 
+- To generate the set of likely pollinating species in the Catalogue of Life (COL) run R/03_COL_pollinators.R. For this script you will need to have downloaded a copy of the COL from here https://www.catalogueoflife.org/data/download. Note that the 2017 COL will first require cleaning up with a script such as R/02_clean_COL.R. When merging with the COL it's important to be wary of duplicating species names. 
 
 ## References
 
