@@ -1,6 +1,6 @@
 # A global dataset of likely animal pollinators
 
-[![Generic badge](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
+[![DOI](https://zenodo.org/badge/391010761.svg)](https://zenodo.org/badge/latestdoi/391010761) [![Generic badge](https://img.shields.io/badge/License-MIT-green.svg)](https://shields.io/)
 
 ### Introduction
 
