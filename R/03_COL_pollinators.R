@@ -38,9 +38,7 @@ extrap_non_text_analysis <- extrap_non_text_analysis %>%
 non_family_genus_list <- read.csv("data/inputs/05_non_family-genus_species-list.csv", stringsAsFactors = FALSE)
 
 # read in COL animal data - NEED TO READ IN DATAFRAME AFTER CORRECTING FOR WHOLE COL (12/11/2019)
-unique_col <- readRDS("~/PhD/Aims/Aim 1 - collate pollinator knowledge/Data/Taxonomic data/2017-annual/cleaned/unique_COL_species_03.rds")
-
-"data/inputs/2017_catalogue_of_life_cleaned.rds"
+unique_col <- readRDS("data/inputs/2017_catalogue_of_life_cleaned.rds")
 
 # subset for unique species
 COL_taxa <- unique_col %>%
