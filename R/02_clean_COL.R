@@ -34,7 +34,7 @@ species <- function(taxa_data, count){
   return(species_names)
 }
 
-# download and read in 2017 catalogue of life data
+# download and read in 2017 catalogue of life data - taxa.txt in the COL download
 taxa <- read.delim("data/inputs/2017_catalogue_of_life.txt", stringsAsFactors=FALSE, quote = "")
 
 # clean data - seleting the appropriate columns and filtering for animals
